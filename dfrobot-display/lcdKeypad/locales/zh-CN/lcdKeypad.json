@@ -1,0 +1,7 @@
+{
+    "LCDKeypad": {
+        "label": {
+            "palette": "HD44780屏幕"
+        }
+    }    
+}
