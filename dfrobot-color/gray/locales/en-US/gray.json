@@ -3,5 +3,10 @@
         "label": {
             "palette": "GrayScale"
         }
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Color": "DFRobot_Color_Sensor"
+        }
     }    
 }

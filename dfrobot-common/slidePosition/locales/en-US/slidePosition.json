@@ -3,5 +3,10 @@
         "label": {
             "palette": "SlidePosition"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Common": "DFRobot_Common_Sensor"
+        }
+    }     
 }

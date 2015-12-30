@@ -3,5 +3,10 @@
         "label": {
             "palette": "模拟灰度传感器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Color": "DFRobot色彩类传感器"
+        }
+    }     
 }

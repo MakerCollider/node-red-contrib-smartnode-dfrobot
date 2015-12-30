@@ -3,5 +3,10 @@
         "label": {
             "palette": "UVSensor"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Light": "DFRobot_Light_Sensor"
+        }
+    }     
 }

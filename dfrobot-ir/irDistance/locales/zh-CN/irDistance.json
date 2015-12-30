@@ -3,5 +3,10 @@
         "label": {
             "palette": "红外距离传感器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_IR": "DFRobot红外线传感器"
+        }
+    }     
 }

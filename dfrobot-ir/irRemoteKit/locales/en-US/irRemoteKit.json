@@ -3,5 +3,10 @@
         "label": {
             "palette": "IrRemoteKit"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_IR": "DFRobot_IR_Sensor"
+        }
+    }     
 }

@@ -3,5 +3,10 @@
         "label": {
             "palette": "光强度传感器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Light": "DFRobot光线传感器"
+        }
+    }     
 }

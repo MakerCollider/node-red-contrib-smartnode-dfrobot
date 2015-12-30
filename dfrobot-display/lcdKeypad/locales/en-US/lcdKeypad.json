@@ -3,5 +3,10 @@
         "label": {
             "palette": "LCDKeypad"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Display": "DFRobot_Display"
+        }
+    }     
 }

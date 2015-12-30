@@ -3,5 +3,10 @@
         "label": {
             "palette": "LM35Temperature"
         }
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Temp_Humi": "DFRobot_Temperature_Humidity"
+        }
     }    
 }
