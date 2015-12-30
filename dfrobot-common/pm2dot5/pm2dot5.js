@@ -117,5 +117,5 @@ module.exports = function(RED) {
             this.log("Stop Serial");
         });
     }
-    RED.nodes.registerType("PM2.5", pm2_5);
+    RED.nodes.registerType("DF-PM2.5", pm2_5);
 }

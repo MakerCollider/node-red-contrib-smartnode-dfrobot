@@ -76,5 +76,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("IrFallPrevent", irFallPrevent);
+    RED.nodes.registerType("DF-IrFallPrevent", irFallPrevent);
 }

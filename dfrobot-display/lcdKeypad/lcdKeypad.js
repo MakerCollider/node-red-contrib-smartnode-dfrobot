@@ -112,5 +112,5 @@ module.exports = function(RED) {
             this.status({fill:"red",shape:"ring",text:"closed"});
         });
     }
-    RED.nodes.registerType("LCDKeypad", LCDKeypad);
+    RED.nodes.registerType("DF-LCDKeypad", LCDKeypad);
 }

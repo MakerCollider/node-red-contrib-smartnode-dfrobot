@@ -72,5 +72,5 @@ module.exports = function(RED) {
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("LM35Temperature", lm35);
+    RED.nodes.registerType("DF-LM35Temperature", lm35);
 }

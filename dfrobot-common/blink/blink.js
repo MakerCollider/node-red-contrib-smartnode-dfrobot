@@ -81,5 +81,5 @@ module.exports = function(RED) {
     }
 
 
-    RED.nodes.registerType("Blink", blink);
+    RED.nodes.registerType("DF-Blink", blink);
 }

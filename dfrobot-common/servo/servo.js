@@ -69,5 +69,5 @@ module.exports = function(RED) {
         });
     } 
   
-    RED.nodes.registerType("Servo", GroveServo);
+    RED.nodes.registerType("DF-Servo", GroveServo);
 }

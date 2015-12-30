@@ -78,5 +78,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("IrDistance", irDistance);
+    RED.nodes.registerType("DF-IrDistance", irDistance);
 }

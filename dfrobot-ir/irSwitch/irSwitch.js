@@ -76,5 +76,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("IrSwitch", irSwitch);
+    RED.nodes.registerType("DF-IrSwitch", irSwitch);
 }

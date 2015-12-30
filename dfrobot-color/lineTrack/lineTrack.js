@@ -68,6 +68,6 @@ module.exports = function(RED) {
     }
 
 
-    RED.nodes.registerType("LineTrack", lineTrack);
+    RED.nodes.registerType("DF-LineTrack", lineTrack);
 }
 

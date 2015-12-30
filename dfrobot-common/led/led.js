@@ -66,5 +66,5 @@ module.exports = function(RED) {
     }
 
 
-    RED.nodes.registerType("Led", led);
+    RED.nodes.registerType("DF-Led", led);
 }

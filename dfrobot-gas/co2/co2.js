@@ -75,5 +75,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("CO2Sensor", co2Sensor);
+    RED.nodes.registerType("DF-CO2Sensor", co2Sensor);
 }

@@ -75,5 +75,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("GraySensor", graySensor);
+    RED.nodes.registerType("DF-GraySensor", graySensor);
 }

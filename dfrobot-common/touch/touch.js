@@ -92,5 +92,5 @@ module.exports = function(RED) {
         }
     }
     }
-    RED.nodes.registerType("Touch", touch);
+    RED.nodes.registerType("DF-Touch", touch);
 }

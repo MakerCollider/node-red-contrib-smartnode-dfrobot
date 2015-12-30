@@ -15,7 +15,7 @@
  **/
 module.exports = function(RED){ 
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
-    var irm = require("jsupm_irRemote");
+    var irm = require("jsupm_irremote");
     function irRemoteKit(config) {
         RED.nodes.createNode(this, config);
         this.digitalPin = config.digitalPin;
@@ -142,5 +142,5 @@ module.exports = function(RED){
             
         }
     }
-    RED.nodes.registerType("IrRemoteKit", irRemoteKit);
+    RED.nodes.registerType("DF-IrRemoteKit", irRemoteKit);
 }

@@ -82,5 +82,5 @@ module.exports = function(RED) {
         }
     }
     }
-    RED.nodes.registerType("Button", button);
+    RED.nodes.registerType("DF-Button", button);
 }
