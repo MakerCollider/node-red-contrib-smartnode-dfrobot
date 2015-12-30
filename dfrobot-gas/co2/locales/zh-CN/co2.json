@@ -3,5 +3,10 @@
         "label": {
             "palette": "CO2传感器"
         }
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Gas_Sensor": "DFRobot气体传感器"
+        }
     }    
 }

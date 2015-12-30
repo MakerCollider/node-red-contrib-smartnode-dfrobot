@@ -3,5 +3,10 @@
         "label": {
             "palette": "HD44780屏幕"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "DFRobot_Display": "DFRobot显示模块"
+        }
+    }   
 }
