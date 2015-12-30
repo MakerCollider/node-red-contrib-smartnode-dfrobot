@@ -1,19 +1,70 @@
 module.exports = function(RED) {
 
     var jslib = require('jsupm_hd44780');
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin"); 
 
     function LCDKeypad(config) {
         RED.nodes.createNode(this, config);
         
         console.log("LCDKeypad(HD44780) initalizing.......");
 
-        var TYPE = Number(config.types);
-        var RS = Number(config.rs);
-        var EN = Number(config.en);
-        var D4 = Number(config.d4);
-        var D5 = Number(config.d5);
-        var D6 = Number(config.d6);
-        var D7 = Number(config.d7);
+        var TYPE = 0;
+        var RS = 8;
+        var EN = 9;
+        var D4 = 4;
+        var D5 = 5;
+        var D6 = 6;
+        var D7 = 7;
+
+        function compare(val) {
+            var key = 'P'+val;
+            if (checkPin.getDigitalPinValue(key)==1){
+                node.status({fill: "red", shape: "dot", text: "pin repeat"});
+                console.log('Pin '+key+ ' occupied, please change other sensor\'s pin config');
+                return 0;
+            }
+            else if (checkPin.getDigitalPinValue(key)==0){
+                checkPin.setDigitalPinValue(key, 1);
+                node.status({fill: "blue", shape: "ring", text: "pin check pass"});
+                console.log('Pin '+key+'OK');
+                return 1;
+            }
+            else{
+                node.status({fill: "blue", shape: "ring", text: "Unknown"});
+                console.log('unknown pin ' + val + ' key value' + checkPin.getDigitalPinValue(key));
+                return 0;
+            }
+        }
+        
+        if(!compare(TYPE))
+        {
+            return;
+        }
+        if(!compare(RS))
+        {
+            return;
+        }
+        if(!compare(EN))
+        {
+            return;
+        }
+        if(!compare(D4))
+        {
+            return;
+        }
+        if(!compare(D5))
+        {
+            return;
+        }
+        if(!compare(D6))
+        {
+            return;
+        }
+        if(!compare(D7))
+        {
+            return;
+        }
+
 
         var screen = new jslib.HD44780(RS, EN, D4, D5, D6, D7);
         screen.begin(16, 2);

@@ -14,7 +14,7 @@
  * limitations under the License.
  **/
 module.exports = function(RED){ 
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var irm = require("jsupm_irRemote");
     function irRemoteKit(config) {
         RED.nodes.createNode(this, config);

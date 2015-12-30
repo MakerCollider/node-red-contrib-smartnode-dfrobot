@@ -15,7 +15,7 @@
  **/
 
 module.exports = function(RED){ 
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var gp2y = require("jsupm_gp2y0a");
     function irDistance(config) {
         RED.nodes.createNode(this, config);
