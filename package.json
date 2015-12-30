@@ -15,14 +15,14 @@
         "jsupm_servo": ">=0.4.1",
         "jsupm_loudness": ">=0.4.1",
         "jsupm_ttp223": ">=0.4.1",
-        "jsupm_hd44780": ">=0.4.1",
         "jsupm_mg811": ">=0.4.1",
         "jsupm_gp2y0a": ">=0.4.1",
-        "jsupm_irRemote": ">=0.0.1",
         "jsupm_biss0001": ">=0.4.1",
         "jsupm_guvas12d": ">=0.4.1",
         "jsupm_lm35": ">=0.4.1",
-        "jsupm_grovemoisture": ">=0.4.1"
+        "jsupm_grovemoisture": ">=0.4.1",
+        "jsupm_hd44780": ">=0.0.1",
+        "jsupm_irRemote": ">=0.0.1"
     },
     "repository": {
         "type": "git",
