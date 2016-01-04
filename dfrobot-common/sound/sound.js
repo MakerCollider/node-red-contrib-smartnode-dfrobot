@@ -15,7 +15,7 @@
  **/
 module.exports = function(RED){ 
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin"); 
-    var groveSensor = require("jsupm_loudness");
+    var mraa = require("mraa");
     function sound(config) {
         RED.nodes.createNode(this, config);
         this.analogPin = config.analogPin;
@@ -40,7 +40,7 @@ module.exports = function(RED){
         }  
         var is_on = false;
         var waiting;
-        var sound = new groveSensor.Loudness(node.analogPin, 5.0);
+        var sound = new mraa.Aio(node.analogPin);
 	    this.on('input', function(msg) {
             //use 'injector' node and pass string to control virtual node
             if ((msg.payload === "toggle") || (msg.payload == 1)) {
@@ -64,10 +64,13 @@ module.exports = function(RED){
         });
     	function readsoundvalue()
     	{
-    		var celSound = sound.loudness();
-    		var msg = { payload:celSound };
-                node.status({fill: "red", shape: "dot", text: "Sound value is " + celSound});
+	    var celSound = sound.readFloat();                            
+            if(celSound != 0){                                     
+                var soundValue = 20 * Math.log(celSound *5 / 0.003)/Math.LN10 -50 + 94 - 20;
+    		var msg = { payload: Math.round(soundValue) };
+                node.status({fill: "red", shape: "dot", text: "Sound value is " + Math.round(soundValue) + "dB"});
     		node.send(msg);
+	    }
     	}
     }
     RED.nodes.registerType("DF-Sound", sound);
