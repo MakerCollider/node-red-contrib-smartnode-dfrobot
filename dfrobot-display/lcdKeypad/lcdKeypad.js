@@ -8,13 +8,14 @@ module.exports = function(RED) {
         
         console.log("LCDKeypad(HD44780) initalizing.......");
 
-        var TYPE = 0;
+        var TYPE = config.type;
         var RS = 8;
         var EN = 9;
         var D4 = 4;
         var D5 = 5;
         var D6 = 6;
         var D7 = 7;
+        var node = this;
 
         function compare(val) {
             var key = 'P'+val;
@@ -26,7 +27,7 @@ module.exports = function(RED) {
             else if (checkPin.getDigitalPinValue(key)==0){
                 checkPin.setDigitalPinValue(key, 1);
                 node.status({fill: "blue", shape: "ring", text: "pin check pass"});
-                console.log('Pin '+key+'OK');
+                console.log('Pin '+key+' OK');
                 return 1;
             }
             else{
@@ -36,10 +37,6 @@ module.exports = function(RED) {
             }
         }
         
-        if(!compare(TYPE))
-        {
-            return;
-        }
         if(!compare(RS))
         {
             return;
@@ -68,7 +65,7 @@ module.exports = function(RED) {
 
         var screen = new jslib.HD44780(RS, EN, D4, D5, D6, D7);
         screen.begin(16, 2);
-        this.status({fill:"blue",shape:"dot",text:"Initalized"});
+        node.status({fill:"blue",shape:"dot",text:"Initalized"});
         console.log("ScreenB(HD44780) initalized!");
 
         var lastConsole = "";
@@ -101,7 +98,7 @@ module.exports = function(RED) {
                     screen.writeStr(">" + msg.payload);
                     lastConsole = msg.payload;
                 }
-                this.status({fill:"blue",shape:"dot",text:"Showing"});
+                node.status({fill:"blue",shape:"dot",text:"Showing"});
             }
         });
 
@@ -109,7 +106,7 @@ module.exports = function(RED) {
             console.log("Stop Screen");
             screen.clear();
             delete screen; 
-            this.status({fill:"red",shape:"ring",text:"closed"});
+            node.status({fill:"red",shape:"ring",text:"closed"});
         });
     }
     RED.nodes.registerType("DF-LCDKeypad", LCDKeypad);
