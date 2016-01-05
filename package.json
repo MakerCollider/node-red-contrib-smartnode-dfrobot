@@ -37,12 +37,8 @@
 
             "lcdKeypad":        "dfrobot-display/lcdKeypad/lcdKeypad.js",
 
-            "Blink":            "dfrobot-common/blink/blink.js",
             "Buzzer":           "dfrobot-common/buzzer/buzzer.js",
-            "Led":              "dfrobot-common/led/led.js",
             "Relay":            "dfrobot-common/relay/relay.js",
-            "BreathLed":        "dfrobot-common/breathLed/breathLed.js",
-            "Button":           "dfrobot-common/button/button.js",
             "PM2.5":            "dfrobot-common/pm2dot5/pm2dot5.js",
             "RotaryEncoder":    "dfrobot-common/rotaryEncoder/rotaryEncoder.js",
             "Sound":            "dfrobot-common/sound/sound.js",
