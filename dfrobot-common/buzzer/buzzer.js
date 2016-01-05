@@ -86,6 +86,8 @@ module.exports = function(RED){
         this.on('close', function() {
             clearInterval(myinterval);
             checkPin.initDigitalPin();  //init pin
+            myBuzzer.stopSound();
+            setPwmto0(node.pwmPin);
         });
     }
     RED.nodes.registerType("DF-Buzzer", buzzer);
