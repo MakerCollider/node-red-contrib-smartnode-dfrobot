@@ -19,14 +19,14 @@
         category: 'DFRobot_Common',
         color: '#E2D96E',
         defaults: {
-            name: {value: "PwmFan", required: false},
+            name: {value: "DF-Fan", required: false},
             pwmPin: {value: "3", required: false},
         },
         inputs: 1,
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "PwmFan";
+            return this.name || "DF-Fan";
         },
         paletteLabel: function () {
             return this.name||this._("PwmFan.label.palette");

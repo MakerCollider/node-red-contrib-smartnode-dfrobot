@@ -45,6 +45,7 @@
             "Servo":            "dfrobot-common/servo/servo.js",
             "SlidePosition":    "dfrobot-common/slidePosition/slidePosition.js",
             "Touch":            "dfrobot-common/touch/touch.js",
+            "Fan":              "dfrobot-common/fan/pwmfan.js",
 
             "CO2Sensor":        "dfrobot-gas/co2/co2.js",
 
