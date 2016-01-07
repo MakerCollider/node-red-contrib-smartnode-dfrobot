@@ -16,7 +16,7 @@
 
 module.exports = function(RED){ 
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
-    var mraa = require("mraa");
+    var mraa = require("mraa-makercollider");
     function smartGraySensor(config) {
         RED.nodes.createNode(this, config);
         this.digitalPin = config.digitalPin;
