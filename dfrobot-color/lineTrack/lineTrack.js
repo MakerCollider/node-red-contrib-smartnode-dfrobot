@@ -16,7 +16,7 @@
 
 module.exports = function(RED) {
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
-    var m = require("mraa-makercollider");
+    var m = require("mraa");
     function lineTrack(config) {
         RED.nodes.createNode(this, config);
         this.digitalPin = config.digitalPin;

@@ -15,7 +15,7 @@
  **/
 module.exports = function(RED) {
 
-    var mraa = require("mraa-makercollider");
+    var mraa = require("mraa");
     var Buffer = require('Buffer');
 
     function pm2_5(config) {

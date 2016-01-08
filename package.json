@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-dfrobot",
-    "version":      "1.0.8",
+    "version":      "1.0.9",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -9,18 +9,6 @@
                     ],
     "dependencies": {
         "Buffer": "*",
-        "mraa-makercollider": ">=0.0.3",
-        "jsupm_grove": ">=0.4.1",
-        "jsupm_buzzer": ">=0.4.1",
-        "jsupm_servo": ">=0.4.1",
-        "jsupm_loudness": ">=0.4.1",
-        "jsupm_ttp223": ">=0.4.1",
-        "jsupm_mg811": ">=0.4.1",
-        "jsupm_gp2y0a": ">=0.4.1",
-        "jsupm_biss0001": ">=0.4.1",
-        "jsupm_guvas12d": ">=0.4.1",
-        "jsupm_lm35": ">=0.4.1",
-        "jsupm_grovemoisture": ">=0.4.1",
         "jsupm_hd44780": ">=0.0.1",
         "jsupm_irremote": ">=0.0.1"
     },
