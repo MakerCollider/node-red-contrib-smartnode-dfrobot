@@ -1,0 +1,48 @@
+<!--
+  Copyright 2015 Maker Collider
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<script type="text/x-red" data-help-name="RGBLed">
+<h3 id="rgbled节点">RGBLED节点</h3>
+
+<p>本节点可以根据自定义输入的RGB参数调节LED灯颜色。</p>
+
+<h4 id="参数配置">参数配置</h4>
+
+<ol>
+<li>Name：节点名称</li>
+<li>Red Pin：红色PWM引脚</li>
+<li>Green Pin：绿色PWM引脚</li>
+<li>Blue Pin：蓝色PWM引脚</li>
+</ol>
+
+<h4 id="输入量">输入量</h4>
+
+<ol>
+<li>msg.color.red：red值，范围为0~255</li>
+<li>msg.color.green：green值，范围为0~255</li>
+<li>msg.color.blue：blue值，范围为0~255</li>
+</ol>
+
+<h4 id="输出量">输出量</h4>
+
+<p>无</p>
+
+<h4 id="使用方法">使用方法</h4>
+
+<ol>
+<li>设置好输入量red，green，blue的值，例如msg.color = {“red”:255, “green”: 0, “blue”: 0}，LED输出红色。</li>
+</ol>
+</script>
