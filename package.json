@@ -40,7 +40,7 @@
             "Relay":            "dfrobot-common/relay/relay.js",
             "PM2.5":            "dfrobot-common/pm2dot5/pm2dot5.js",
             "RotaryEncoder":    "dfrobot-common/rotaryEncoder/rotaryEncoder.js",
-            "RGBLed":           "dfrobot-common/RGBLed/RGBLed.js"
+            "RGBLed":           "dfrobot-common/RGBLed/RGBLed.js",
             "Sound":            "dfrobot-common/sound/sound.js",
             "Servo":            "dfrobot-common/servo/servo.js",
             "SlidePosition":    "dfrobot-common/slidePosition/slidePosition.js",
