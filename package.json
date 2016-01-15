@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-dfrobot",
-    "version":      "1.0.11",
+    "version":      "1.0.13",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -21,8 +21,7 @@
         "jsupm_loudness": ">=0.4.1",
         "jsupm_mg811": ">=0.4.1",
         "jsupm_servo": ">=0.4.1",
-        "jsupm_ttp223": ">=0.4.1",
-        "mraa": ">=0.8.1"
+        "jsupm_ttp223": ">=0.4.1"
     },
     "repository": {
         "type": "git",
