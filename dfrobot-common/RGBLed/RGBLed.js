@@ -15,7 +15,7 @@
  * limitations under the License.
  **/
 module.exports = function(RED){ 
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var upmRBGLed = require("jsupm_rgbled");
     function RGBLed(config) {
         RED.nodes.createNode(this, config);
