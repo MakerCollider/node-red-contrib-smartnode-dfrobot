@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Temp_Humi": "DFRobot_Temperature_Humidity"
+              "DFRobot": "DFRobot_Sensor"
         }
     }    
 }

@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Gas": "DFRobot_Gas_Sensor"
+              "DFRobot": "DFRobot_Sensor"
         }
     }   
 }

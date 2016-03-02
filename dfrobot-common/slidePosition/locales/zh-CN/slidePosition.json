@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Common": "DFRobot普通传感器"
+              "DFRobot": "DFRobot传感器"
         }
     }     
 }

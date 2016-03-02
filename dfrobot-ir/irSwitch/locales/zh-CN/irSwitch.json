@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_IR": "DFRobot红外线传感器"
+              "DFRobot": "DFRobot传感器"
         }
     }     
 }

@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Display": "DFRobot显示模块"
+              "DFRobot": "DFRobot传感器"
         }
     }   
 }

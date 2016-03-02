@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Display": "DFRobot_Display"
+              "DFRobot": "DFRobot_Sensor"
         }
     }     
 }

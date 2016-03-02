@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "DFRobot_Color": "DFRobot色彩类传感器"
+              "DFRobot": "DFRobot传感器"
         }
     }     
 }
