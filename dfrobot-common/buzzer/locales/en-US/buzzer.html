@@ -1,4 +1,4 @@
-<!--
+﻿<!--
   Copyright 2015 Maker Collider
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,34 +15,34 @@
 -->
 
 <script type="text/x-red" data-help-name="DF-Buzzer">
-<h3 id="蜂鸣器节点">蜂鸣器节点</h3>
+<h3 id="Buzzer Node">Buzzer Node</h3>
 
-<p>本节点表示grove套件的蜂鸣器模块。</p>
+<p>This node represents the Buzzer module in the "grove" suite.</p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>PWM Pin：PWM引脚</li>
-<li>Tone(1~7)：音调，范围为1~7</li>
+<li>Name：Name of the node</li>
+<li>PWM Pin：PWM pin</li>
+<li>Tone(1~7)：Tone, range from 1 to 7</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：输入1或者0，1表示打开，0表示关闭</li>
+<li>msg.payload：Input 1 or 0.1 represents open and 0 represents close.</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：输出1或者0，1表示蜂鸣器响，0表示蜂鸣器关闭</li>
+<li>msg.payload：Output 1 or 0. 1 means the buzzer is sending out sound and 0 means the buzzer is closed.</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，选择蜂鸣器发出的音调。</li>
-<li>当输入<code>msg.payload</code>为1时，蜂鸣器响，蜂鸣器节点输出<code>msg.payload</code>为1，当输入<code>msg.payload</code>为0时，蜂鸣器关，蜂鸣器节点输出<code>msg.payload</code>为0。</li>
+<li> Set up all the parameters' configuration properly. Choose the tone of the buzzer.</li>
+<li>When the input value,<code>msg.payload</code>,equals 1,the buzzer beep and the buzzer node's  output, <code>msg.payload</code>,equals 1.When the input value,<code>msg.payload</code>, equals 0，the buzzer close and the buzzer node's output，<code>msg.payload</code>,equals 0。</li>
 </ol>
 </script>
