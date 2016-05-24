@@ -14,5 +14,35 @@
   limitations under the License.
 -->
 <script type="text/x-red" data-help-name="DF-LM35Temperature">
-    <p>A Node-RED node for LM35 temperature sensor, need analog pin</p>
+
+<h3 id="LM35 Temperature Sensor Node">LM35 Temperature Sensor Node</h3>
+
+<p>This node represents the LM35 Temperature Sensor Node in the DF kit. </p>
+
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
+
+<ol>
+<li>Name：Name of the node.</li>
+<li>Analog Pin：Analog Pin.</li>
+<li>Interval：Time interval.</li>
+</ol>
+
+<h4 id="Input">Input</h4>
+
+<ol>
+<li>msg.payload：Switching value.</li>
+</ol>
+
+<h4 id="Output">Output</h4>
+
+<ol>
+<li>msg.payload：Temperature</li>
+</ol>
+
+<h4 id="Usage">Usage</h4>
+
+<ol>
+<li>Configure all the parameters properly.The node output current temperature value every interval time.The temperature should range from -40℃ to 150℃。</li>
+</ol>
+
 </script>
