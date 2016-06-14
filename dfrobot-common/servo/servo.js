@@ -53,7 +53,8 @@ module.exports = function(RED) {
             console.log("input!");
             angle = msg.payload;
             angle = angle>>>0;
-            
+            if(angle>150)
+                angle=150;   
             servo.setAngle(angle);
             node.status({fill: "red", shape: "dot", text: "Servo move to " + angle});
             console.log("Set Angle to " + angle);
