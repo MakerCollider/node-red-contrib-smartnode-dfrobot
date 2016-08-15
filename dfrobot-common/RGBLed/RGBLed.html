@@ -19,7 +19,7 @@
         category: 'HardwareOutput',
         color: '#E2D96E',
         defaults: {
-            name: {value: "RGBLed", required: false},
+            name: {value: "", required: false},
             pwmRedPin: {value: "3", required: false},
             pwmGreenPin: {value: "5", required: false},
             pwmBluePin: {value: "6", required: false},
@@ -28,7 +28,7 @@
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "RGBLed";
+            return this.name || this._("RGBLed.label.palette");
         },
         paletteLabel: function () {
             return this.name||this._("RGBLed.label.palette");

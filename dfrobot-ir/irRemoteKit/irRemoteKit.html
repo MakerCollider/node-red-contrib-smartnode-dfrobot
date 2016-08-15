@@ -19,14 +19,14 @@
         category: 'DFRobot',
         color: '#E2D96E',
         defaults: {
-            name: {value: "IrRemoteKit", required: false},
+            name: {value: "", required: false},
             digitalPin: {value: "2", required: false}
         },
         inputs: 0,
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.digitalPin;
+            return (this.name||this._("IrRemoteKit.label.palette")) +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("IrRemoteKit.label.palette");

@@ -19,13 +19,13 @@
 		category: 'DFRobot',
 		color: '#E2D96E',
 		defaults: {
-			name:      {value: "PM2.5", required: false},
+			name:      {value: "", required: false},
 		},
 		inputs: 1,
 		outputs: 3,
 		icon: "serial.png",
 		label: function() {
-			return this.name || "PM2.5";
+			return this.name || this._("PM2dot5.label.palette");
 		},
                 paletteLabel: function () {
                     return this.name||this._("PM2dot5.label.palette");

@@ -3,14 +3,14 @@
         category: 'DFRobot',
         color: '#E2D96E',
         defaults: {
-            name:       {value: "LCDKeypad",  required: false},
+            name:       {value: "",  required: false},
             types:       {value: 0,          required: true}
         },
         inputs: 1,
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "LCDKeypad";
+            return this.name || this._("LCDKeypad.label.palette");
         },
         paletteLabel: function () {
             return this.name||this._("LCDKeypad.label.palette");

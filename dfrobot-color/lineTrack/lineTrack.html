@@ -19,7 +19,7 @@
         category: 'DFRobot',
         color: '#E2D96E',
         defaults: {
-            name: {value: "LineTrack", required: false},
+            name: {value: "", required: false},
             digitalPin: {value: "2", required: false},
             interval: {value: "100", required: false}
         },
@@ -27,7 +27,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.digitalPin;
+            return (this.name||this._("LineTrack.label.palette")) +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("LineTrack.label.palette");
